@@ -5,9 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<button>logout</button>
-<a th:href="@{/logout}">logout</a><br>
-This will be page where we set trackers...
+<button><a th:href="@{/logout}">logout</a></button><br>
 <form th:action="@{/mymadam-save}" th:object="${mymadam}" method="post">
     <div class="form-group">
         <label>Web Page Link</label>
