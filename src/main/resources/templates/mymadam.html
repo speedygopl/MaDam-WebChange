@@ -8,5 +8,25 @@
 <button>logout</button>
 <a th:href="@{/logout}">logout</a><br>
 This will be page where we set trackers...
+<form th:action="@{/mymadam-save}" th:object="${mymadam}" method="post">
+    <div class="form-group">
+        <label>Web Page Link</label>
+        <textarea class="form-control" th:field="*{link}" rows="3"></textarea>
+    </div>
+    <div class="col-md-6 form-group">
+        <label>Frequency</label>
+        <select class="form-control" th:field="*{frequency}">
+            <option value="">Choose...</option>
+            <option value=5>5min</option>
+            <option value=15>15min</option>
+            <option value=30>30min</option>
+        </select>
+    </div>
+    <div class="col-md-6 form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" th:field="*{email}">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block mt-3">Save</button>
+</form>
 </body>
 </html>
