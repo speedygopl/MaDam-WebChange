@@ -14,12 +14,9 @@ import java.io.IOException;
 @Controller
 public class MyMadamController {
 
-    public static String email;
-
     @GetMapping("/mymadam")
     public String mymadamCreate(Model model) {
         model.addAttribute("mymadam", new MyMadam());
-
         return "mymadam";
     }
 

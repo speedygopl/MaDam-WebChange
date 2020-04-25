@@ -1,3 +1,3 @@
-http://localhost:8080/mymadam
-5
-damazy5@wp.pl
+http://localhost:8080
+1
+gdanska44@wp.pl
